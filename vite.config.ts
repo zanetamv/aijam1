@@ -6,6 +6,10 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   base: '/aijam1/',
+  server: {
+    host: 'localhost',
+    port: 5173,
+  },
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] }),
